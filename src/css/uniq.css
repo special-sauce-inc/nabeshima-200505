@@ -1,0 +1,281 @@
+@charset "utf-8";
+/* ==================================================
+		
+		商品カタログCSS PC
+
+================================================== */
+@media screen and (min-width:769px) {
+/* --------------------------------------------------
+		h1
+-------------------------------------------------- */
+.vi {
+  background: url(../img/vi.jpg) no-repeat right top / cover;
+  height: 61rem;
+  position: relative;
+}
+h1 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit- transform: translateY(-50%) translateX(-50%);
+  text-shadow: 0 0 10px #ffffff;
+}
+
+/* --------------------------------------------------
+		product
+-------------------------------------------------- */
+.product {
+  max-width: 120rem;
+  width: 91.8%;
+  margin: 9.6rem auto 0;
+}  
+.product .product-inner {
+  background: #ffffff;
+  margin-top: 4rem;
+  padding: 6.1rem 0;
+}  
+.product .product-inner:first-of-type { 
+  position: relative;
+  margin-top: -19.7rem; 
+}  
+.product .product-inner h3 {
+  color: #001030;
+  font-family: "Noto Serif JP", serif;
+  font-size: 4rem;
+  font-weight: 400;
+  text-align: center;
+  text-indent: -43rem;
+  margin: 0 0 2.2rem 35rem;
+}  
+.product .product-inner > p {
+  text-align: center;
+  font-weight: 300;
+  line-height: 1.82;
+  padding: 0 5.9rem;
+}  
+
+/* nodata */  
+.product .product-inner.nodata h3 {
+  text-indent: 0;
+  margin: 0 0 2.2rem 0;
+}  
+
+/* photo
+-------------------------------------------------- */  
+.product .product-inner .photo {
+  margin-top: 8%;
+  position: relative;
+}  
+.product .product-inner:last-of-type .photo { margin-top: 5%; } 
+.product .product-inner .photo .logo {
+  text-align: center;
+  margin-left: 50%;
+}
+.product .product-inner .photo .logo img { width: 55%; }
+.product .product-inner .photo .data {
+  background: #f8f8f8;
+  padding: 3% 3% 3% 50%;
+  margin-top: 5%;
+}  
+.product .product-inner:last-of-type .photo .data { margin-top: 7%; }  
+.product .product-inner .photo .data h5 {
+  font-size: 3.6rem;
+  font-weight: 400;
+}  
+.product .product-inner .photo .data p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-top: 2%;
+  line-height: 1.9;
+} 
+
+/* nodata */  
+.product .product-inner.nodata { padding-bottom: 21.1rem; }  
+.product .product-inner.nodata .photo { margin-top: 29%; }  
+.product .product-inner.nodata .photo:first-of-type { margin-top: 13%; }  
+.product .product-inner.nodata .photo .main-photo { bottom: -15rem; }
+.product .product-inner.nodata .photo:nth-child(even) .logo { margin: 0 50% 0 0; }  
+
+/* gallery
+-------------------------------------------------- */  
+.product .product-inner .photo .thumbnail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3rem 3rem 3rem 51%;
+  justify-content: space-between;
+  background: #06193e;
+}  
+.product .product-inner .photo .thumbnail li:hover, 
+.product .product-inner .photo .thumbnail li.current {
+  outline: 1px solid #ffffff;
+  outline-offset: -0.1rem;
+}  
+.product .product-inner .photo .thumbnail li.current a, 
+.product .product-inner .photo .thumbnail li a:hover { opacity: 0.3; }  
+.product .product-inner .photo .main-photo {
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+}  
+.product .product-inner .photo .main-photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 4.8rem;
+}  
+
+/* nodata */  
+.product .product-inner.nodata .photo:nth-child(even) .thumbnail { padding: 3rem 51% 3rem 3rem; }   
+.product .product-inner.nodata .photo:nth-child(even) .main-photo { right: 0; }  
+.product .product-inner.nodata .photo .thumbnail { margin-top: 8%; }  
+
+}
+
+
+/* ==================================================
+		
+		商品カタログCSS SP
+
+================================================== */
+@media screen and (max-width:768px) {
+/* --------------------------------------------------
+		main
+-------------------------------------------------- */
+main { padding-top: 10.5rem; }
+  
+/* --------------------------------------------------
+		h1
+-------------------------------------------------- */
+.vi {
+  background: url(../img/vi_sp.jpg) no-repeat right top / cover;
+  height: 83rem;
+  position: relative;
+}
+h1 {
+  width: 100%;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit- transform: translateY(-50%) translateX(-50%);
+  text-shadow: 0.1rem 0.1rem 0.1rem #ffffff;
+}
+
+/* --------------------------------------------------
+		product
+-------------------------------------------------- */
+.product {
+  padding: 0 3rem;
+  margin-top: 7rem;
+}  
+.product .product-inner {
+  background: #ffffff;
+  margin-top: 3rem;
+  padding: 3rem 0;
+}  
+.product .product-inner:first-of-type {
+  position: relative;
+  margin-top: -14rem; 
+}  
+.product .product-inner:last-of-type .photo { margin-top: 0; }  
+.product .product-inner h3 {
+  color: #001030;
+  font-size: 4.2rem;
+  font-family: "Noto Serif JP", serif;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  padding: 0 5.9rem;
+  margin-bottom: 4.3rem;
+}  
+.product .product-inner > p {
+  font-weight: 300;
+  line-height: 1.5;
+  padding: 0 4rem;
+}  
+
+/* photo
+-------------------------------------------------- */  
+.product .product-inner .photo { margin-top: 5rem; }  
+.product .product-inner .photo .logo {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.product .product-inner .photo .logo img { width: 55%; }
+.product .product-inner .photo .data {
+  background: #f8f8f8;
+  padding: 3rem 4rem;
+  margin-top: 1rem;
+}  
+.product .product-inner .photo .data h5 {
+  font-size: 3rem;
+  font-weight: 400;
+}  
+.product .product-inner .photo .data p {
+  font-weight: 300;
+  margin-top: 1rem;
+}  
+
+/* gallery
+-------------------------------------------------- */  
+.product .product-inner .photo .thumbnail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3rem 3rem 3rem 3rem;
+  justify-content: space-between;
+  background: #06193e;
+}  
+.product .product-inner .photo .thumbnail li {  margin-left: 0.8rem; }  
+.product .product-inner .photo .thumbnail li:first-of-type { margin-left: 0; }  
+.product .product-inner .photo .thumbnail li:hover, 
+.product .product-inner .photo .thumbnail li.current {
+  outline: 1px solid #ffffff;
+  outline-offset: -0.1rem;
+}  
+.product .product-inner .photo .thumbnail li.current a,  
+.product .product-inner .photo .thumbnail li a:hover { opacity: 0.3; }  
+.product .product-inner .photo .main-photo {
+  text-align: center;
+  position: relative;
+  margin: 4rem;
+}  
+.product .product-inner .photo .main-photo img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+}  
+
+/* nodata */  
+.product .product-inner.nodata .photo .main-photo { margin-top: 0; }    
+
+}
+
+
+@media (min-width: 769px) and (max-width: 1000px) {
+.pcDisp02 { display: none; }
+.product .product-inner h3 {
+  text-indent: 0;
+  margin: 0 5.9rem 2.2rem 5.9rem;
+}  
+
+}
+
+
+@media (min-width: 769px) and (max-width: 1250px) {
+.product .product-inner .photo .data h5 { font-size: 2.5vw; }
+.product .product-inner .photo .data p { font-size: 1.4vw; }
+  
+}
+
+
+@media (min-width: 769px) and (max-width: 919px) {
+.product .product-inner.nodata .photo:first-of-type { margin-top: 11%; }
+  
+}

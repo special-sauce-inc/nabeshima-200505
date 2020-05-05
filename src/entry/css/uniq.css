@@ -1,0 +1,556 @@
+@charset "utf-8";
+/* ==================================================
+		
+		エントリーCSS PC
+
+================================================== */
+@media screen and (min-width:769px) {
+/* --------------------------------------------------
+		h1
+-------------------------------------------------- */
+h1 { margin-top: 9.6rem; }
+
+/* --------------------------------------------------
+		entry
+-------------------------------------------------- */
+.entry {
+  max-width: 120rem;
+  width: 91.8%;
+  margin: 9.6rem auto 13.5rem;
+}  
+.entry .entry-inner {
+  background: #ffffff;
+  padding: 6.1rem 5.9rem;
+}  
+.entry .entry-inner > p {
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 1.9;
+  margin-top: -1rem;
+}  
+
+/* form
+-------------------------------------------------- */  
+.entry .entry-inner form {
+  margin-top: 7.1rem;
+  position: relative;
+}  
+.entry .entry-inner form ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4rem 2.9rem;
+  border-bottom: 1px solid #cdd1d9;
+ }
+.entry .entry-inner form ul li:first-of-type { padding: 0 2.9rem 4.2rem; }
+.entry .entry-inner form ul li:last-of-type { 
+  border: none;
+  padding-bottom: 0;
+}
+.entry .entry-inner form ul li .tit {
+  min-width: 24rem;
+  font-size: 1.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack:justify;
+  -ms-flex-pack:justify;
+  justify-content:space-between;
+}
+.entry .entry-inner form ul li .tit .icon {
+  font-size: 1.4rem;
+  color: #ffffff;
+  background: #000e2b;
+  padding: 0.3rem 1.2rem 0.5rem;
+  display: inline-table;
+  border-radius: 0.2rem;
+}
+.entry .entry-inner form ul li .cont { 
+  width: 100%;
+  margin: -0.8rem 0 0 2rem; 
+}
+input, button, textarea, select {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.entry .entry-inner form ul li .occupation {
+  background: #f7f7f7;
+  border: 1px solid #c0b4b4;
+  border-radius: 0.2rem;
+  position: relative;
+  width: 19.5rem;
+ }
+.entry .entry-inner form ul li .occupation::before {
+  position: absolute;
+  top: 1em;
+  right: 1.6rem;
+  width: 0;
+  height: 0;
+  content: '';
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #636262;
+  pointer-events: none;
+}
+.entry .entry-inner form ul li .occupation:after {
+  position: absolute;
+  top: 0;
+  right: 4.2rem;
+  top: 0.8rem;
+  bottom: 0.8rem;
+  width: 0.1rem;
+  content: '';
+  border-left: 1px dashed #bbbbbb;
+}
+.entry .entry-inner form ul li .occupation select {
+  width: 100%;
+  padding: 0.8rem 1.5rem 0.9rem;
+  cursor: pointer;
+ }  
+.entry .entry-inner form ul li .name input, 
+.entry .entry-inner form ul li .furi input {
+  width: 100%;
+  background: #f7f7f7;
+  border: 1px solid #c0b4b4;
+  border-radius: 0.2rem;
+  padding: 0.9rem 0 1rem 0.9rem;
+}
+.entry .entry-inner form ul li .sex { padding: 0.8rem 0 0.9rem; }
+.entry .entry-inner form ul li .sex input + span {
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 3.1rem;
+  padding-left: 2.8rem;
+  position: relative;
+}
+.entry .entry-inner form ul li .sex input + span::before {
+  -webkit-transform: translateY(-50%);
+  background: #ffffff;
+  border: 1px solid #c3c3c3;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 2rem;
+  left: 0;
+  position: absolute;
+  top: 58%;
+  transform: translateY(-58%);
+  width: 2rem;
+}
+.entry .entry-inner form ul li .sex input + span::after {
+  -webkit-transform: translateY(-50%);
+  background: #636262;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  content: "";
+  height: 1rem;
+  left: 0.5rem;
+  opacity: 0;
+  padding: 0.2rem;
+  position: absolute;
+  top: 56%;
+  transform: translateY(-56%);
+  width: 1rem;
+}
+.entry .entry-inner form ul li .sex input:checked + span::after { opacity: 1; }
+.entry .entry-inner form ul li .down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: -2rem;
+}
+.entry .entry-inner form ul li .down > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.entry .entry-inner form ul li .birth {
+  background: #f7f7f7;
+  border: 1px solid #c0b4b4;
+  border-radius: 0.2rem;
+  position: relative;
+  width: 10.5rem;
+  margin-right: 1.2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  display: inline;
+}
+.entry .entry-inner form ul li .birth::before {
+  position: absolute;
+  top: 1em;
+  right: 1.6rem;
+  width: 0;
+  height: 0;
+  content: '';
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #636262;
+  pointer-events: none;
+}
+.entry .entry-inner form ul li .birth:after {
+  position: absolute;
+  top: 0;
+  right: 4.2rem;
+  top: 0.8rem;
+  bottom: 0.8rem;
+  width: 0.1rem;
+  content: '';
+  border-left: 1px dashed #bbbbbb;
+}
+.entry .entry-inner form ul li .birth select {
+  width: 100%;
+  padding: 0.8rem 1.5rem 0.9rem;
+  cursor: pointer;
+}
+.entry .entry-inner form ul li .no {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.entry .entry-inner form ul li .no input{
+  width: 100%;
+  background: #f7f7f7;
+  border: 1px solid #c0b4b4;
+  border-radius: 0.2rem;
+  padding: 0.9rem 0 1rem 0.9rem;
+}
+.entry .entry-inner form ul li .no span{
+  font-size: 1.8rem;
+  min-width: 2.8rem;
+  padding-top: 1rem;
+}
+.entry .entry-inner form ul li .add span {
+  margin-bottom: 2rem;
+  display: block;
+}
+.entry .entry-inner form ul li .add span:first-of-type { margin-top: -0.5rem; }
+.entry .entry-inner form ul li .add span span {
+  display: block;
+  margin: 0 0 0.7rem 0.9rem;
+}
+.entry .entry-inner form ul li .add span input, 
+.entry .entry-inner form ul li .tel input{
+  width: 100%;
+  background: #f7f7f7;
+  border: 1px solid #c0b4b4;
+  border-radius: 0.2rem;
+  padding: 0.9rem 0 1rem 0.9rem;
+}
+.entry .entry-inner form ul li .mail input:first-of-type{ margin-bottom: 3rem; }
+.entry .entry-inner form ul li .mail input {
+  width: 100%;
+  background: #f7f7f7;
+  border: 1px solid #c0b4b4;
+  border-radius: 0.2rem;
+  padding: 0.9rem 0 1rem 0.9rem;
+  display: block;
+}
+.entry .entry-inner form ul li .mail input:first-of-type { margin-bottom: 3rem; }
+.entry .entry-inner form ul li .resume, 
+.entry .entry-inner form ul li .curriculum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.entry .entry-inner form ul li .resume label, 
+.entry .entry-inner form ul li .curriculum label {
+  width: 15.5rem;
+  background: #f7f7f7;
+  border: 1px solid #c0b4b4;
+  border-radius: 0.2rem;
+  display: block;
+  padding: 0.9rem 1.8rem 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+input[type="file"] { display: none; }
+.entry .entry-inner form ul li .resume > p, 
+.entry .entry-inner form ul li .curriculum > p { margin: 1rem 0 0 2rem; }
+::-webkit-input-placeholder { color:#999999; }
+:-ms-input-placeholder { color:#999999; }
+::placeholder{ color:#999999 }
+.btn-vm {
+  font-family: "Noto Sans JP", sans-serif;
+  position: absolute;
+  bottom: -20rem;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+
+}
+
+
+/* ==================================================
+		
+		エントリーCSS SP
+
+================================================== */
+@media screen and (max-width:768px) {
+/* --------------------------------------------------
+		h1
+-------------------------------------------------- */
+h1 { padding: 0 3rem; }
+
+/* --------------------------------------------------
+		entry
+-------------------------------------------------- */
+.entry {
+  padding: 0 3rem;
+  margin-top: 7rem;
+}  
+.entry .entry-inner > p {
+  background: #ffffff;
+  font-weight: 300;
+  padding: 3rem 4rem;
+}  
+
+/* form
+-------------------------------------------------- */  
+.entry .entry-inner form ul {
+   background: #ffffff;
+   padding: 1rem 4rem 3rem;	
+}  
+.entry .entry-inner form ul li {
+  padding: 3.5rem 0;
+  border-bottom: 1px solid #cdd1d9;
+ }
+.entry .entry-inner form ul li:first-of-type { padding-top: 0; }
+.entry .entry-inner form ul li:last-of-type {
+  border: none;
+  margin-bottom: -1.5rem;
+}
+.entry .entry-inner form ul li .tit {
+  font-size: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.entry .entry-inner form ul li .tit .icon {
+  font-size: 2rem;
+  color: #ffffff;
+  background: #000e2b;
+  padding: 0.3rem 1.2rem 0.4rem;
+  margin-left: 1rem;
+  border-radius: 0.2rem;
+}
+.entry .entry-inner form ul li .cont { margin-top: 2rem; }
+input, button, textarea, select {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.entry .entry-inner form ul li .occupation {
+  background: #f7f7f7;
+  border: 1px solid #c0b4b4;
+  border-radius: 0.2rem;
+  position: relative;
+  width: 35rem;
+ }
+.entry .entry-inner form ul li .occupation::before { 
+  position: absolute;
+  top: 1em;
+  right: 2rem;
+  width: 0;
+  height: 0;
+  content: '';
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #636262;
+  pointer-events: none;
+}
+.entry .entry-inner form ul li .occupation:after { 
+  position: absolute;
+  top: 0;
+  right: 2.2em;
+  top: 0.8rem;
+  bottom: 0.8rem;
+  width: 0.1rem;
+  content: '';
+  border-left: 1px dashed #bbbbbb;
+}
+.entry .entry-inner form ul li .occupation select {
+  width: 100%;
+  padding: 0.9rem 0 1rem 0.9rem;
+  cursor: pointer;
+ }  
+.entry .entry-inner form ul li .name input, 
+.entry .entry-inner form ul li .furi input {
+  width: 100%;
+  background: #f7f7f7;
+  border: 1px solid #c0b4b4;
+  border-radius: 0.2rem;
+  padding: 0.9rem 0 1rem 0.9rem;
+}  
+.entry .entry-inner form ul li .sex { 
+  padding: 0.8rem 0 0.9rem; 
+  margin-left: 0;
+}
+.entry .entry-inner form ul li .sex input + span {
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 2rem;
+  padding-left: 2.8rem;
+  position: relative;
+}
+.entry .entry-inner form ul li .sex input + span::before {
+  -webkit-transform: translateY(-50%);
+  background: #ffffff;
+  border: 1px solid #c3c3c3;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 2rem;
+  left: 0;
+  position: absolute;
+  top: 58%;
+  transform: translateY(-58%);
+  width: 2rem;
+}
+
+.entry .entry-inner form ul li .sex input + span::after {
+  -webkit-transform: translateY(-50%);
+  background: #636262;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  content: "";
+  height: 1rem;
+  left: 0.5rem;
+  opacity: 0;
+  padding: 0.2rem;
+  position: absolute;
+  top: 56%;
+  transform: translateY(-56%);
+  width: 1rem;
+}
+.entry .entry-inner form ul li .sex input:checked + span::after { opacity: 1; }  
+.entry .entry-inner form ul li .down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.entry .entry-inner form ul li .birth {
+  background: #f7f7f7;
+  border: 1px solid #c0b4b4;
+  border-radius: 0.2rem;
+  position: relative;
+  width: 10.5rem;
+  margin-right: 0.1rem;
+  cursor: pointer;
+  display: inline-block;
+}
+.entry .entry-inner form ul li .birth::before {
+  position: absolute;
+  top: 1em;
+  right: 1.6rem;
+  width: 0;
+  height: 0;
+  content: '';
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #636262;
+  pointer-events: none;
+}
+.entry .entry-inner form ul li .birth:after {
+  position: absolute;
+  top: 0;
+  right: 4.2rem;
+  top: 0.8rem;
+  bottom: 0.8rem;
+  width: 0.1rem;
+  content: '';
+  border-left: 1px dashed #bbbbbb;
+}
+.entry .entry-inner form ul li .birth select {
+  width: 100%;
+  padding: 0.8rem 1.5rem 0.9rem;
+  cursor: pointer;
+}
+.entry .entry-inner form ul li .birth span { margin-right: 1.5rem; }
+.entry .entry-inner form ul li:nth-of-type(5) span { margin-right: 1.5rem; } 
+.entry .entry-inner form ul li .no input {
+  width: 100%;
+  background: #f7f7f7;
+  border: 1px solid #c0b4b4;
+  border-radius: 0.2rem;
+  padding: 0.9rem 0 1rem 0.9rem;
+}  
+.entry .entry-inner form ul li .no {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.entry .entry-inner form ul li .no span {
+  font-size: 2.5rem;
+  margin-right: 0.5rem;
+  padding-top: 0.8rem;
+}  
+.entry .entry-inner form ul li .add span input, 
+.entry .entry-inner form ul li .tel input {
+  width: 100%;
+  background: #f7f7f7;
+  border: 1px solid #c0b4b4;
+  border-radius: 0.2rem;
+  padding: 0.9rem 0 1rem 0.9rem;
+}  
+.entry .entry-inner form ul li .add span {
+  margin-bottom: 2.5rem;
+  display: block;
+}
+.entry .entry-inner form ul li .add span:last-of-type { margin-bottom: 0; }
+.entry .entry-inner form ul li .add span span { padding-bottom: 1rem; }
+.entry .entry-inner form ul li .mail input {
+  width: 100%;
+  background: #f7f7f7;
+  border: 1px solid #c0b4b4;
+  border-radius: 0.2rem;
+  padding: 0.9rem 0 1rem 0.9rem;
+  display: block;
+}
+.entry .entry-inner form ul li .mail input:first-of-type { margin-bottom: 3rem; }
+.entry .entry-inner form ul li .resume, 
+.entry .entry-inner form ul li .curriculum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.entry .entry-inner form ul li .resume label, 
+.entry .entry-inner form ul li .curriculum label {
+  width: 20rem;
+  background: #f7f7f7;
+  border: 1px solid #c0b4b4;
+  border-radius: 0.2rem;
+  display: block;
+  padding: 0.9rem 1rem 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+input[type="file"] { display: none; }
+.entry .entry-inner form ul li .resume > p, 
+.entry .entry-inner form ul li .curriculum > p { margin: 1rem 0 0 2rem; }  
+::-webkit-input-placeholder { color:#999999; }
+:-ms-input-placeholder { color:#999999; }
+::placeholder{ color:#999999 }
+.btn-vm {
+  font-family: "Noto Sans JP", sans-serif;
+  margin: 4.5rem auto 0;
+  border-radius: 0;
+}
+  
+}

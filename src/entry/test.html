@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title></title>
+
+<style type="text/css">
+
+  
+  
+input, button, textarea, select {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.9rem 0 1rem;
+  background: none;
+}
+  
+  
+span {
+  font-size: 16px;
+  width: 15.5rem;
+  background: #f7f7f7;
+  border: 1px solid #c0b4b4;
+  border-radius: 0.2rem;
+  display: block;
+  padding: 0.9rem 1.8rem 1rem;
+  text-align: center;
+  cursor:pointer;
+  z-index: 2;
+}
+span:hover {
+transition: opacity .3s ease-out;
+}
+input {
+position: relative;
+margin: 16px 0 0 -98px;
+}
+input::before {
+content:"";
+position: absolute;
+background: #fff;
+width: 110px;
+height: 26px;
+line-height: 1.8;
+text-align: right;
+}
+</style>
+</head>
+<body>
+  <div>
+<label for="id_img" >
+<span>ファイルを選択</span>
+<input id="id_img" type="file">
+</label>
+</div>  
+</body>
+</html>
